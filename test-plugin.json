@@ -1,0 +1,31 @@
+{
+  "phobos_plugin": "1.0",
+  "kennung": "test-plugin",
+  "name": "Test-Plugin",
+  "icon": "🧪",
+  "version": "1.0.0",
+  "autor": "Test",
+  "beschreibung": "Nur zum Ausprobieren: legt einen einzigen Befehl an, der eine frei wählbare Antwort schreibt, und eine Level-Belohnung. Gefahrlos, jederzeit wieder entfernbar. Gedacht, um die Plugin-Kette einmal durchzuspielen.",
+
+  "quelle": "https://raw.githubusercontent.com/LucyWolf/phobos-test-plugin/main/test-plugin.json",
+  "homepage": "https://github.com/LucyWolf/phobos-test-plugin",
+
+  "einstellungen": [
+    {
+      "name": "antwort",
+      "art": "text",
+      "titel": "Was soll der Befehl antworten?",
+      "hinweis": "Frei wählbar. Leer gelassen gilt der Standard.",
+      "standard": "Das Plugin funktioniert! 🎉"
+    }
+  ],
+
+  "inhalt": {
+    "befehle": [
+      { "trigger": "!plugintest", "response": "{{antwort}}" }
+    ],
+    "level_belohnungen": [
+      { "level": 5, "reward": "Hat das Test-Plugin überlebt 🧪" }
+    ]
+  }
+}
